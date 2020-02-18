@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--        android:orientation="vertical" android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:focusableInTouchMode="true">-->
+
+
+    <!--    TOOLBAR START-->
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#405DF1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="55dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="268dp"
+                android:layout_marginRight="268dp"
+                android:src="@drawable/abc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.428" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="76dp"
+                android:layout_height="23dp"
+                android:padding="0dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.38" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--    toolbar ends -->
+
+
+
+    <ScrollView
+        android:id="@+id/Bscroll_flat_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="1dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/select_prop_bar"
+                android:layout_width="600dp"
+
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="1150dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:padding="1dp"
+
+                android:background="@drawable/rounded_corners">
+
+
+                <Button
+                    android:id="@+id/select_prop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Select This Propert"
+                    android:onClick="select_prop"/>
+            </RelativeLayout>
+
+            <!--                SELLERS PROFILE PIC AND NAME -->
+
+            <!--                END OF SELLER PIC AND PROFILE-->
+
+            <!--            MIAN PICUTURE -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Bmain_pic"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/russel"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="1dp" />
+
+
+            <!--MAIN PIC ENDS-->
+
+
+
+            <!--main heading start-->
+
+
+            <RelativeLayout
+                android:id="@+id/Baddr_block"
+                android:layout_width="600dp"
+
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:padding="5dp"
+
+                android:background="@drawable/rounded_corners">
+
+
+
+
+                <TextView
+                    android:id="@+id/Bprop_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:text="main heading"
+                    android:textStyle="bold"/>
+
+
+
+            </RelativeLayout>
+
+            <!--end of  main heaidng-->
+
+            <!--            ADDRESS BLOCK -->
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/Bmain_heading"
+                android:layout_width="600dp"
+
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="440dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:id="@+id/Bprop_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:text="pro"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+            <!--            END OF ADDRESS BLOCK-->
+
+
+            <!--            start of area price block-->
+
+
+            <RelativeLayout
+                android:id="@+id/Barea_price_block"
+                android:layout_width="600dp"
+                android:layout_height="125dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="570dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corners">
+
+
+                <TextView
+                    android:id="@+id/Bprop_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+
+                <TextView
+                    android:id="@+id/Bprop_price"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="65dp"
+
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+            <!--            end of area price block-->
+
+
+            <!--            strat pof rating block-->
+
+            <RelativeLayout
+                android:id="@+id/Brating"
+                android:layout_width="600dp"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="705dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="Property Condition"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"  />
+
+                <RatingBar
+                    android:id="@+id/Bprop_ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="97dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="47dp"
+                    android:layout_marginRight="47dp"
+                    android:stepSize="1"
+                    android:numStars="5"
+                    android:isIndicator="true"/>
+
+
+                <TextView
+                    android:id="@+id/Bprop_rating_comment"
+                    android:layout_width="400dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="Property Condition"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"  />
+
+            </RelativeLayout>
+            <!--rating ends-->
+
+
+            <!--detail block start-->
+            <RelativeLayout
+                android:id="@+id/Bdetails"
+                android:layout_width="600dp"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="865dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corners">
+
+
+                <TextView
+                    android:id="@+id/Bprop_elevator"
+                    android:layout_width="400dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="abcdefg"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/Bprop_balcony"
+                    android:layout_width="400dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="abcdefg"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/Bprop_floors"
+                    android:layout_width="400dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="abcdefg"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"  />
+
+                <TextView
+                    android:id="@+id/Bprop_rooms"
+                    android:layout_width="400dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="abcdefg"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"  />
+
+
+            </RelativeLayout>
+
+
+            <!--end of details blck-->
+
+            <!--            start of media block-->
+
+            <RelativeLayout
+                android:id="@+id/prop_pics"
+                android:layout_width="600dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="1090dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corners">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Property Views"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:onClick="see_pics2"
+                    />
+
+            </RelativeLayout>
+            <!--            end of media block-->
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+

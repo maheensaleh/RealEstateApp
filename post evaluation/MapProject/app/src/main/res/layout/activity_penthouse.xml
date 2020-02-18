@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#405DF1"
+        android:paddingBottom="5dp"
+        android:text="Penthouse Sell Form"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:paddingTop="4dp"/>
+
+    <ScrollView
+        android:id="@+id/pscroll_flat_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="1dp">
+
+
+            <!--            ADDRESS BLOCK -->
+
+            <RelativeLayout
+                android:layout_width="600dp"
+
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingTop="3dp"
+                android:paddingLeft="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="3dp"
+                android:background="@drawable/rounded_corners">
+
+
+                <EditText
+                    android:id="@+id/paddress_submit"
+                    android:layout_width="320dp"
+                    android:layout_height="109dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="60dp"
+                    android:hint="Click icon to add your address"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:textSize="18dp"
+                    />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/pfloatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="318dp"
+                    android:layout_marginTop="83dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_location_on_black"
+                    android:onClick="addlocation"/>
+
+
+            </RelativeLayout>
+
+            <!--            END OF ADDRESS BLOCK-->
+
+
+
+            <!--            RENT / SELL BLOCK  -->
+            <RelativeLayout
+                android:layout_width="600dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/rounded_corners">
+
+
+                <CheckBox
+                    android:id="@+id/pfor_sale"
+                    android:layout_width="105dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="227dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginRight="51dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Available For Sale"
+                    android:textAlignment="gravity"
+                    android:textSize="18dp" />
+
+                <CheckBox
+                    android:id="@+id/pfor_rent"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="196dp"
+                    android:layout_marginRight="196dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Available For Rent"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/pgiveprice"
+                    android:layout_width="101dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="111dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="172dp"
+                    android:layout_marginRight="172dp"
+                    android:text="Price : "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/pprice"
+                    android:layout_width="158dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="169dp"
+                    android:layout_marginTop="69dp"
+                    android:layout_marginEnd="57dp"
+                    android:layout_marginRight="57dp"
+                    android:hint="in PKR"
+                    android:inputType="number"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="128dp"
+                    android:layout_marginEnd="75dp"
+                    android:layout_marginRight="75dp"
+                    android:text="Rate your property condition"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <RatingBar
+                    android:id="@+id/pratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="97dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginEnd="47dp"
+                    android:layout_marginRight="47dp"
+                    android:stepSize="1"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/ptvRatingScale"
+                    android:layout_width="342dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="212dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:hint="property rating"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <!--            home details -->
+            <RelativeLayout
+                android:layout_width="600dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="440dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/rounded_corners">
+
+
+                <CheckBox
+                    android:id="@+id/pbalcony"
+                    android:layout_width="105dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="227dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginRight="51dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Balcony Available"
+                    android:textAlignment="gravity"
+                    android:textSize="18dp" />
+
+                <CheckBox
+                    android:id="@+id/pelevator"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="196dp"
+                    android:layout_marginRight="196dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Elevator Available"
+                    android:textSize="18dp" />
+
+
+
+                <TextView
+                    android:id="@+id/prooms"
+                    android:layout_width="130dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="67dp"
+
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="187dp"
+                    android:layout_marginRight="187dp"
+                    android:text="No. of Rooms"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/pArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="170dp"
+                    android:text="Area ( in sq. fts)"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+
+
+                <TextView
+                    android:id="@+id/prooms_qty"
+                    android:layout_width="41dp"
+                    android:layout_height="36dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="201dp"
+
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="142dp"
+
+                    android:layout_marginRight="142dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/premove_room"
+                    android:layout_width="40dp"
+                    android:layout_height="41dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="316dp"
+                    android:layout_marginTop="122dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:onClick="remove_room"
+                    android:text="-" />
+
+
+                <Button
+                    android:id="@+id/padd_room"
+                    android:layout_width="40dp"
+                    android:layout_height="41dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="252dp"
+                    android:layout_marginTop="122dp"
+                    android:layout_marginEnd="92dp"
+                    android:layout_marginRight="92dp"
+                    android:onClick="add_room"
+                    android:text="+" />
+
+                <Spinner
+                    android:id="@+id/pflat_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginEnd="96dp"
+                    android:layout_marginRight="96dp"
+                    android:layout_marginBottom="39dp" />
+
+
+            </RelativeLayout>
+            <!--            home details  ends   -->
+
+
+            <!--&lt;!&ndash;            PICS N VIDEOS BLOCK&ndash;&gt;-->
+
+            <RelativeLayout
+                android:layout_width="600dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="680dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/rounded_corners">
+
+
+                <ImageView
+                    android:id="@+id/pimg3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="57dp"
+                    android:layout_marginTop="192dp"
+                    android:layout_marginEnd="207dp"
+                    android:layout_marginRight="207dp"
+                    android:onClick="addimage3"
+                    app:srcCompat="@drawable/maheen" />
+
+                <ImageView
+                    android:id="@+id/pimg1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginEnd="210dp"
+                    android:layout_marginRight="210dp"
+                    android:onClick="addimage1"
+                    app:srcCompat="@drawable/maheen" />
+
+                <ImageView
+                    android:onClick="addimage4"
+                    android:id="@+id/pimg4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="241dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    app:srcCompat="@drawable/maheen" />
+
+                <ImageView
+                    android:onClick="addimage2"
+                    android:id="@+id/pimg2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="75dp"
+                    app:srcCompat="@drawable/maheen" />
+
+                <Button
+                    android:id="@+id/padd1"
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="false"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Add Property Images" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <!--            PICS N VIDEOS END-->
+
+            <!-- SHOW PREVIEW BUTTON BLOCK-->
+
+            <RelativeLayout
+                android:layout_width="600dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="1000dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/rounded_corners">
+
+                <Button
+                    android:id="@+id/ppreviewform_PENTHOUSE"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="preview_ad_penthouse"
+                    android:text="Submit  Ad" />
+
+            </RelativeLayout>
+            <!-- SHOW PREVIEW BUTTON END-->
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

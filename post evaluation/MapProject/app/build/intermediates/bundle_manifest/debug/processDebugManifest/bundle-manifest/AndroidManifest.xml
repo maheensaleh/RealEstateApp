@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mapproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Include required permissions for Google Maps API to run. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/abc"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mapproject.addressgot"
+            android:label="@string/title_activity_addressgot" />
+        <activity android:name="com.example.mapproject.propertydetails" />
+        <activity
+            android:name="com.example.mapproject.seller"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.mapproject.buyer"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.example.mapproject.getdata" />
+        <activity android:name="com.example.mapproject.show_selected_sell" />
+        <activity android:name="com.example.mapproject.penthouse" />
+        <activity android:name="com.example.mapproject.pics_list" />
+        <activity android:name="com.example.mapproject.flat" />
+        <activity android:name="com.example.mapproject.banglow" />
+        <activity android:name="com.example.mapproject.select_prop" />
+        <activity
+            android:name="com.example.mapproject.popupactivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBh8cFstPxWK5WQ9t0tjCWSjGTVICGIWG4" />
+
+        <activity android:name="com.example.mapproject.MainActivity" >
+
+            <!-- <intent-filter> -->
+
+
+            <!-- to make login firast oage -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- to enable sra splash -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <!-- by bsra code -->
+
+        <activity android:name="com.example.mapproject.activities.UserProfile" />
+        <activity android:name="com.example.mapproject.activities.Switch_Here" />
+        <activity
+            android:name="com.example.mapproject.activities.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mapproject.activities.SplashActivity"
+            android:label="splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mapproject.activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mapproject.activities.UsersListActivity"
+            android:screenOrientation="portrait" />
+        <!-- end by sara code -->
+        <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

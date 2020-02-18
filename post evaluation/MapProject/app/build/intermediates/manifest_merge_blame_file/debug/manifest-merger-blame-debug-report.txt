@@ -1,0 +1,211 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mapproject"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:6:5-81
+12-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:7:5-79
+13-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.SEND_SMS" />
+14-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:8:5-67
+14-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:9:5-79
+15-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:9:22-77
+16
+17    <!-- Include required permissions for Google Maps API to run. -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/a3d702a77cbfacefb23de82416a0cb1f/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+18-->[com.google.android.gms:play-services-maps:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/a3d702a77cbfacefb23de82416a0cb1f/play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/a3d702a77cbfacefb23de82416a0cb1f/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/a3d702a77cbfacefb23de82416a0cb1f/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/a3d702a77cbfacefb23de82416a0cb1f/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+23
+24    <application
+24-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:12:5-83:19
+25        android:allowBackup="true"
+25-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:13:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.1.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/e9dab9c67c1ee3668e0bbf86c6d8cbd8/core-1.1.0/AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@drawable/abc"
+28-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:14:9-37
+29        android:label="@string/app_name"
+29-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:15:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:16:9-54
+31        android:supportsRtl="true"
+31-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:17:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:18:9-40
+34        <activity
+34-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:19:9-21:74
+35            android:name="com.example.mapproject.addressgot"
+35-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:20:13-39
+36            android:label="@string/title_activity_addressgot" />
+36-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:21:13-62
+37        <activity android:name="com.example.mapproject.propertydetails" />
+37-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:22:9-53
+37-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:22:19-50
+38        <activity
+38-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:23:9-24:58
+39            android:name="com.example.mapproject.seller"
+39-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:23:19-41
+40            android:windowSoftInputMode="adjustResize" />
+40-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:24:13-55
+41        <activity
+41-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:25:9-26:57
+42            android:name="com.example.mapproject.buyer"
+42-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:25:19-40
+43            android:windowSoftInputMode="adjustResize" />
+43-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:26:13-55
+44        <activity android:name="com.example.mapproject.getdata" />
+44-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:27:9-54
+44-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:27:19-42
+45        <activity android:name="com.example.mapproject.show_selected_sell" />
+45-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:28:9-56
+45-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:28:19-53
+46        <activity android:name="com.example.mapproject.penthouse" />
+46-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:29:9-47
+46-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:29:19-44
+47        <activity android:name="com.example.mapproject.pics_list" />
+47-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:30:9-47
+47-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:30:19-44
+48        <activity android:name="com.example.mapproject.flat" />
+48-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:31:9-42
+48-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:31:19-39
+49        <activity android:name="com.example.mapproject.banglow" />
+49-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:32:9-45
+49-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:32:19-42
+50        <activity android:name="com.example.mapproject.select_prop" />
+50-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:33:9-49
+50-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:33:19-46
+51        <activity
+51-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:35:9-38:58
+52            android:name="com.example.mapproject.popupactivity"
+52-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:36:13-42
+53            android:theme="@style/AppTheme"
+53-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:37:13-44
+54            android:windowSoftInputMode="adjustResize" />
+54-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:38:13-55
+55
+56        <meta-data
+56-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:40:9-42:71
+57            android:name="com.google.android.geo.API_KEY"
+57-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:41:13-58
+58            android:value="AIzaSyBh8cFstPxWK5WQ9t0tjCWSjGTVICGIWG4" />
+58-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:42:13-68
+59
+60        <activity android:name="com.example.mapproject.MainActivity" >
+60-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:44:9-54:20
+60-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:44:19-47
+61
+62            <!-- <intent-filter> -->
+63
+64
+65            <!-- to make login firast oage -->
+66            <!-- <action android:name="android.intent.action.MAIN" /> -->
+67
+68
+69            <!-- to enable sra splash -->
+70
+71
+72            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+73            <!-- </intent-filter> -->
+74        </activity>
+75
+76        <!-- by bsra code -->
+77
+78        <activity android:name="com.example.mapproject.activities.UserProfile" />
+78-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:58:9-69
+78-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:58:19-57
+79        <activity android:name="com.example.mapproject.activities.Switch_Here" />
+79-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:59:9-60
+79-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:59:19-57
+80        <activity
+80-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:60:9-66:20
+81            android:name="com.example.mapproject.activities.LoginActivity"
+81-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:61:13-53
+82            android:screenOrientation="portrait" >
+82-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:62:13-49
+83            <intent-filter>
+83-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:63:13-65:29
+84                <action android:name="android.intent.action.MAIN" />
+84-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:64:17-69
+84-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:64:25-66
+85            </intent-filter>
+86        </activity>
+87        <activity
+87-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:67:9-75:20
+88            android:name="com.example.mapproject.activities.SplashActivity"
+88-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:68:13-54
+89            android:label="splash" >
+89-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:69:13-35
+90            <intent-filter>
+90-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:70:13-74:29
+91                <action android:name="android.intent.action.MAIN" />
+91-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:64:17-69
+91-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:64:25-66
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:73:17-77
+93-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:73:27-74
+94            </intent-filter>
+95        </activity>
+96        <activity
+96-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:76:9-78:52
+97            android:name="com.example.mapproject.activities.RegisterActivity"
+97-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:77:13-56
+98            android:screenOrientation="portrait" />
+98-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:78:13-49
+99        <activity
+99-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:79:9-81:52
+100            android:name="com.example.mapproject.activities.UsersListActivity"
+100-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:80:13-57
+101            android:screenOrientation="portrait" />
+101-->/home/maheensaleh/Desktop/post evaluation/MapProject/app/src/main/AndroidManifest.xml:81:13-49
+102        <!-- end by sara code -->
+103        <!-- Needs to be explicitly declared on P+ -->
+104        <uses-library
+104-->[com.google.android.gms:play-services-maps:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/a3d702a77cbfacefb23de82416a0cb1f/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+105            android:name="org.apache.http.legacy"
+105-->[com.google.android.gms:play-services-maps:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/a3d702a77cbfacefb23de82416a0cb1f/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+106            android:required="false" />
+106-->[com.google.android.gms:play-services-maps:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/a3d702a77cbfacefb23de82416a0cb1f/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+107
+108        <activity
+108-->[com.google.android.gms:play-services-base:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/77c2fc448e2bd0738fd67dce062b1efd/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+109            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+109-->[com.google.android.gms:play-services-base:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/77c2fc448e2bd0738fd67dce062b1efd/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+110            android:exported="false"
+110-->[com.google.android.gms:play-services-base:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/77c2fc448e2bd0738fd67dce062b1efd/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.google.android.gms:play-services-base:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/77c2fc448e2bd0738fd67dce062b1efd/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+112
+113        <meta-data
+113-->[com.google.android.gms:play-services-basement:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/4db843822f04ea845c6b4f10af2270e0/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+114            android:name="com.google.android.gms.version"
+114-->[com.google.android.gms:play-services-basement:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/4db843822f04ea845c6b4f10af2270e0/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+115            android:value="@integer/google_play_services_version" />
+115-->[com.google.android.gms:play-services-basement:17.0.0] /home/maheensaleh/.gradle/caches/transforms-2/files-2.1/4db843822f04ea845c6b4f10af2270e0/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+116    </application>
+117
+118</manifest>
